@@ -1,8 +1,9 @@
 from math import sqrt
 
 def custom_sqrt(number):
-    #TODO: implementation
+    if (number < 0):
+        return -sqrt(-number)
     return sqrt(number)
 
 number = input("Enter a number: ")
-print(custom_sqrt(int(number)))
+print(custom_sqrt(float(number)))
